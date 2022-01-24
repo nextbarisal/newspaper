@@ -5,7 +5,7 @@ import img1 from '../../images/featured_img1.jpg'
 const SideBar = () => {
     const [news, setNews] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/news`)
+        fetch(`http://newsapi.munimrahman.xyz/news`)
             .then(res => res.json())
             .then(data => setNews(data))
     }, [])

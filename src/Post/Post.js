@@ -7,7 +7,7 @@ const Post = () => {
 
     const onSubmit = (data) => {
         // data.key = pass
-        fetch('http://localhost:5000/news', {
+        fetch('http://newsapi.munimrahman.xyz/news', {
             method: "POST",
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(data)

@@ -7,7 +7,7 @@ const HomePolitics = () => {
     const [politicsNews, setPoliticsNews] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:5000/news/Politics`)
+        fetch(`http://newsapi.munimrahman.xyz/news/Politics`)
             .then(res => res.json())
             .then(data => setPoliticsNews(data))
     }, [])

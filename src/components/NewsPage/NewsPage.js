@@ -7,7 +7,7 @@ const NewsPage = () => {
     const { id } = useParams();
     const [news, setNews] = useState({});
     useEffect(() => {
-        fetch(`http://localhost:5000/news/${id}`)
+        fetch(`http://newsapi.munimrahman.xyz/news/${id}`)
             .then(res => res.json())
             .then(data => setNews(data))
     }, [])

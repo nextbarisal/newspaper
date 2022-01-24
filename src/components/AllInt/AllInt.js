@@ -7,7 +7,7 @@ const AllInt = () => {
     const [internationalNews, setInternationalNews] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:5000/news/International`)
+        fetch(`http://newsapi.munimrahman.xyz/news/International`)
             .then(res => res.json())
             .then(data => setInternationalNews(data))
     }, [])
