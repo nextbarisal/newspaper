@@ -7,10 +7,10 @@ const NewsPage = () => {
     const { id } = useParams();
     const [news, setNews] = useState({});
     useEffect(() => {
-        fetch(`http://newsapi.munimrahman.xyz/news/${id}`)
+        fetch(`https://fast-citadel-27550.herokuapp.com/news/${id}`)
             .then(res => res.json())
             .then(data => setNews(data))
-    }, [])
+    }, [id])
 
     return (
         <div>

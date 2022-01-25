@@ -6,7 +6,7 @@ const Sports = () => {
     const [sportsNews, setSportsNews] = useState([])
 
     useEffect(() => {
-        fetch(`http://newsapi.munimrahman.xyz/news/Sports`)
+        fetch(`https://fast-citadel-27550.herokuapp.com/news/Sports`)
             .then(res => res.json())
             .then(data => setSportsNews(data))
     }, [])

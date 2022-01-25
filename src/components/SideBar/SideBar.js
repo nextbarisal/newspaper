@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import img1 from '../../images/featured_img1.jpg'
 
 const SideBar = () => {
-    const [news, setNews] = useState([]);
+    const [sideNews, setSideNews] = useState([]);
     useEffect(() => {
-        fetch(`http://newsapi.munimrahman.xyz/news`)
+        fetch(`https://fast-citadel-27550.herokuapp.com/news`)
             .then(res => res.json())
-            .then(data => setNews(data))
+            .then(data => setSideNews(data))
     }, [])
-    const latestNews = news.slice(0, 6)
+    const latestNews = sideNews.slice(0, 6)
 
     return (
         <div>

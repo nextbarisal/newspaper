@@ -5,7 +5,7 @@ const International = () => {
     const [internationalNews, setInternationalNews] = useState([])
 
     useEffect(() => {
-        fetch(`http://newsapi.munimrahman.xyz/news/International`)
+        fetch(`https://fast-citadel-27550.herokuapp.com/news/International`)
             .then(res => res.json())
             .then(data => setInternationalNews(data))
     }, [])

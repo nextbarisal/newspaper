@@ -7,7 +7,7 @@ const HomePolitics = () => {
     const [politicsNews, setPoliticsNews] = useState([])
 
     useEffect(() => {
-        fetch(`http://newsapi.munimrahman.xyz/news/Politics`)
+        fetch(`https://fast-citadel-27550.herokuapp.com/news/Politics`)
             .then(res => res.json())
             .then(data => setPoliticsNews(data))
     }, [])

@@ -7,7 +7,7 @@ const Post = () => {
 
     const onSubmit = (data) => {
         // data.key = pass
-        fetch('http://newsapi.munimrahman.xyz/news', {
+        fetch('https://fast-citadel-27550.herokuapp.com/news', {
             method: "POST",
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(data)
